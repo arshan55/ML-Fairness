@@ -1,0 +1,22 @@
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# Models
+models/*.pkl
+models/*.pth
+
+# Data
+datasets/raw_data/
+*.csv
+!results/paper_results_table.csv
+
+# Large documents / research context that shouldn't be in code repo
+*.pdf
+final 15 papers/
+*.docx
