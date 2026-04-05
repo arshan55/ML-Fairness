@@ -1,12 +1,18 @@
-# Ignore everything
+# Ignore everything by default
 *
 
-# Allow results directory
+# Allow Results
 !results/
 !results/**
 
-# Allow README.md
-!README.md
+# Allow Main Codes
+!src/
+!src/**
+!run_pipeline.py
+!requirements.txt
+!Fairness_Pipeline.ipynb
 
-# Allow .gitignore itself
+# Allow Documentation
+!README.md
+!Research_Paper_Outline.md
 !.gitignore
