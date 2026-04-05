@@ -14,5 +14,11 @@
 
 # Allow Documentation
 !README.md
-!Research_Paper_Outline.md
 !.gitignore
+
+# Explicitly exclude research-editing files
+Research_Paper_Outline.md
+final 15 papers/
+scripts/
+paper_summaries.json
+make_notebook.py
