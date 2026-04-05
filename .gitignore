@@ -1,22 +1,12 @@
-# Python Cache
-__pycache__/
-*.pyc
+# Ignore everything
+*
 
-# Virtual Environments
-venv/
-env/
-.env
+# Allow results directory
+!results/
+!results/**
 
-# Models
-models/*.pkl
-models/*.pth
+# Allow README.md
+!README.md
 
-# Data
-datasets/raw_data/
-*.csv
-!results/paper_results_table.csv
-
-# Large documents / research context that shouldn't be in code repo
-*.pdf
-final 15 papers/
-*.docx
+# Allow .gitignore itself
+!.gitignore
