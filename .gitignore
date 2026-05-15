@@ -1,24 +1,39 @@
-# Ignore everything by default
-*
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
 
-# Allow Results
-!results/
-!results/**
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Allow Main Codes
-!src/
-!src/**
-!run_pipeline.py
-!requirements.txt
-!Fairness_Pipeline.ipynb
+# Project Data
+datasets/*
+!datasets/fetch_data.py
+models/*
+!models/.keep
 
-# Allow Documentation
-!README.md
-!.gitignore
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Explicitly exclude research-editing files
-Research_Paper_Outline.md
-final 15 papers/
-scripts/
-paper_summaries.json
-make_notebook.py
+# Results (Exclude data/model dumps, keep images for README)
+results/**/*.csv
+results/**/*.txt
+results/**/*.json
+results/**/*.pkl
+results/**/*.pth
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

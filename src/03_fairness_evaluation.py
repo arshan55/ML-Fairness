@@ -8,8 +8,13 @@ import os
 import joblib
 import pandas as pd
 import numpy as np
-from fairlearn.metrics import demographic_parity_difference, equalized_odds_difference
 from sklearn.neighbors import NearestNeighbors
+
+# Native fairness metrics (no fairlearn dependency)
+import sys
+_src = os.path.dirname(__file__)
+sys.path.insert(0, _src)
+from fairness_metrics import demographic_parity_difference, equalized_odds_difference
 
 MODEL_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models')
 
