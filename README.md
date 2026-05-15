@@ -124,6 +124,3 @@ python run_pipeline.py --domain salary
 python run_pipeline.py --domain healthcare
 ```
 
----
-
-*This repository demonstrates a generalizable fairness framework applicable across domains. The healthcare dataset is synthetically generated and calibrated to MEPS Panel-21 statistics for research reproducibility.*
